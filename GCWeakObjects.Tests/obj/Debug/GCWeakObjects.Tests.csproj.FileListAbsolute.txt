@@ -1,0 +1,10 @@
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\GCWeakObjects.Tests.exe.config
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\GCWeakObjects.Tests.exe
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\GCWeakObjects.Tests.pdb
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\GCWeakObjects.dll
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\GCWeakObjects.pdb
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\obj\Debug\GCWeakObjects.Tests.csprojResolveAssemblyReference.cache
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\obj\Debug\GCWeakObjects.Tests.exe
+C:\Users\mbarb\GitHub\GCWeakObjects\GCWeakObjects.Tests\obj\Debug\GCWeakObjects.Tests.pdb

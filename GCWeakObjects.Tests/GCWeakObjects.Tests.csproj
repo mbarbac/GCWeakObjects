@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CBB997B2-6945-4318-9AF6-D21F1EAB4A55}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{4A1F48F8-1389-41D7-90A2-50E4ADB88E14}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GCWeakObjects</RootNamespace>
-    <AssemblyName>GCWeakObjects</AssemblyName>
+    <RootNamespace>GCWeakObjects.Tests</RootNamespace>
+    <AssemblyName>GCWeakObjects.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,33 +33,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GCObjects.HardLink\CustomizableComparer.cs" />
-    <Compile Include="GCObjects.HardLink\GCListener.cs" />
-    <Compile Include="GCObjects.HardLink\SoftBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftKeyBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftKeyDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftList.cs" />
-    <Compile Include="GCObjects.HardLink\SoftReference.cs" />
-    <Compile Include="GCObjects.HardLink\SoftValueBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftValueDictionary.cs" />
+    <Compile Include="Launcher.HardLink\Launcher.cs" />
+    <Compile Include="Launcher.HardLink\OnlyThisClassAttribute.cs" />
+    <Compile Include="Launcher.HardLink\OnlyThisMethosAttribute.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tools\CannotCreateException.cs" />
-    <Compile Include="Tools\NotFoundException.cs" />
-    <Compile Include="Tools\MethodEx.cs" />
-    <Compile Include="Tools\ExceptionEx.cs" />
-    <Compile Include="Tools\TypeEx.cs" />
-    <Compile Include="Tools\ConsoleEx.cs" />
-    <Compile Include="Tools\IEnumerableEx.cs" />
-    <Compile Include="Tools\DebugEx.cs" />
-    <Compile Include="Tools\StringEx.cs" />
+    <Compile Include="Tests.HardLink\Test_CustomizableComparer.cs" />
+    <Compile Include="Tests.HardLink\Test_GCListener.cs" />
+    <Compile Include="Tests.HardLink\Test_SoftBucketDictionary.cs" />
+    <Compile Include="Tests.HardLink\Test_SoftDictionary.cs" />
+    <Compile Include="Tests.HardLink\Test_SoftList.cs" />
+    <Compile Include="Tests.HardLink\Test_SoftReference.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GCWeakObjects\GCWeakObjects.csproj">
+      <Project>{cbb997b2-6945-4318-9af6-d21f1eab4a55}</Project>
+      <Name>GCWeakObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

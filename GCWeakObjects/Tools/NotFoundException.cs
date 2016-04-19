@@ -13,45 +13,25 @@ namespace Kerosene.Tools
 	/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY. Provides source-code compatible calls
 	/// for the usage of this project, without including the complete tools library.
 	/// </summary>
-	public static class DebugEx
+	[Serializable]
+	public class NotFoundException : Exception
 	{
 		/// <summary>
 		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
 		/// </summary>
-		public static bool AutoFlush
-		{
-			[DebuggerStepThrough]
-			get { return Debug.AutoFlush; }
-			set { Debug.AutoFlush = value; }
-		}
-
-		/// <summary>
-		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
-		/// </summary>
-		public static int IndentSize
-		{
-			[DebuggerStepThrough]
-			get { return Debug.IndentSize; }
-			set { Debug.IndentSize = value; }
-		}
-
-		/// <summary>
-		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
-		/// </summary>
-		public static void AddConsoleListener() { }
+		public NotFoundException() { }
 
 		/// <summary>
 		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
 		/// </summary>
 		/// <param name="message"></param>
-		/// <param name="args"></param>
-		[Conditional("DEBUG")]
-		public static void WriteLine(string message = null, params object[] args)
-		{
-			if (message == null) message = string.Empty;
-			else if (args != null && args.Length != 0) message = string.Format(message, args);
+		public NotFoundException(string message) : base(message) { }
 
-			Debug.WriteLine(message);
-		}
+		/// <summary>
+		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
+		/// </summary>
+		/// <param name="message"></param>
+		/// <param name="inner"></param>
+		public NotFoundException(string message, Exception inner) : base(message, inner) { }
 	}
 }

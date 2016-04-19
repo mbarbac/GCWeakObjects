@@ -10,12 +10,13 @@ namespace Kerosene.Tools
 {
 	// ====================================================
 	/// <summary>
-	/// Helpers and extensions for working with <see cref="IEnumerable"/> objects.
+	/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY. Provides source-code compatible calls
+	/// for the usage of this project, without including the complete tools library.
 	/// </summary>
 	public static class IEnumerableEx
 	{
 		/// <summary>
-		/// Executes the given delegate for each member of the collection.
+		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
 		/// </summary>
 		/// <param name="iter"></param>
 		/// <param name="action"></param>
@@ -28,7 +29,7 @@ namespace Kerosene.Tools
 		}
 
 		/// <summary>
-		/// Executes the given delegate for each member of the collection.
+		/// EXTRACTED FROM THE 'KEROSENE.TOOLS' LIBRARY.
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <param name="iter"></param>
