@@ -39,17 +39,17 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Launcher.HardLink\Launcher.cs" />
-    <Compile Include="Launcher.HardLink\OnlyThisClassAttribute.cs" />
-    <Compile Include="Launcher.HardLink\OnlyThisMethosAttribute.cs" />
+    <Compile Include="Launcher\Launcher.cs" />
+    <Compile Include="Launcher\OnlyThisClassAttribute.cs" />
+    <Compile Include="Launcher\OnlyThisMethosAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests.HardLink\Test_CustomizableComparer.cs" />
-    <Compile Include="Tests.HardLink\Test_GCListener.cs" />
-    <Compile Include="Tests.HardLink\Test_SoftBucketDictionary.cs" />
-    <Compile Include="Tests.HardLink\Test_SoftDictionary.cs" />
-    <Compile Include="Tests.HardLink\Test_SoftList.cs" />
-    <Compile Include="Tests.HardLink\Test_SoftReference.cs" />
+    <Compile Include="Tests\Test_CustomizableComparer.cs" />
+    <Compile Include="Tests\Test_GCListener.cs" />
+    <Compile Include="Tests\Test_SoftBucketDictionary.cs" />
+    <Compile Include="Tests\Test_SoftDictionary.cs" />
+    <Compile Include="Tests\Test_SoftList.cs" />
+    <Compile Include="Tests\Test_SoftReference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

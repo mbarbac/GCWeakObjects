@@ -35,16 +35,16 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GCObjects.HardLink\CustomizableComparer.cs" />
-    <Compile Include="GCObjects.HardLink\GCListener.cs" />
-    <Compile Include="GCObjects.HardLink\SoftBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftKeyBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftKeyDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftList.cs" />
-    <Compile Include="GCObjects.HardLink\SoftReference.cs" />
-    <Compile Include="GCObjects.HardLink\SoftValueBucketDictionary.cs" />
-    <Compile Include="GCObjects.HardLink\SoftValueDictionary.cs" />
+    <Compile Include="Code\CustomizableComparer.cs" />
+    <Compile Include="Code\GCListener.cs" />
+    <Compile Include="Code\SoftBucketDictionary.cs" />
+    <Compile Include="Code\SoftDictionary.cs" />
+    <Compile Include="Code\SoftKeyBucketDictionary.cs" />
+    <Compile Include="Code\SoftKeyDictionary.cs" />
+    <Compile Include="Code\SoftList.cs" />
+    <Compile Include="Code\SoftReference.cs" />
+    <Compile Include="Code\SoftValueBucketDictionary.cs" />
+    <Compile Include="Code\SoftValueDictionary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\CannotCreateException.cs" />
     <Compile Include="Tools\NotFoundException.cs" />
